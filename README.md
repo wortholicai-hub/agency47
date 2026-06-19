@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Agency47
+
+> Your agency, fully automated by 47 AI agents working together.
+
+A unified AI system that runs an entire digital agency autonomously. Handles sales, marketing, support, and operations with zero human intervention.
+
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Language:** TypeScript
+- **Styling:** CSS Modules + Global CSS
+- **Deployment:** Docker / Vercel
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── layout.tsx              # Root layout
+│   ├── page.tsx                # Homepage
+│   ├── globals.css             # Global styles & design tokens
+│   ├── case-studies/           # Case studies page
+│   ├── deploy/                 # Deploy page
+│   ├── protocols/              # Protocols page
+│   └── solutions/              # Solutions pages
+│       ├── voice-ai/           # Voice AI Agents
+│       ├── crm/                # CRM Automations
+│       ├── support/            # Omnichannel Support
+│       ├── outreach/           # Lead Gen & Outreach
+│       ├── workflows/          # Operational Workflows
+│       └── content/            # Content Systems
+├── components/
+│   ├── Header.tsx              # Navigation with Solutions dropdown
+│   ├── Footer.tsx              # Site footer
+│   ├── Hero.tsx                # Hero section
+│   ├── BackgroundVideo.tsx     # Background video component
+│   ├── LuminousCard/           # Glowing card component
+│   └── TrackingCard/           # Tracking card component
+public/
+├── assets/                     # Static assets (videos, images)
+└── favicon.svg                 # Site favicon
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Docker
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+docker-compose up --build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Vercel
 
-## Deploy on Vercel
+Push to your connected Git repository. Vercel will auto-deploy.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proprietary — All rights reserved.
