@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import BackgroundVideo from "@/components/BackgroundVideo";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
+import GrainOverlay from "@/components/GrainOverlay";
 
 export const metadata: Metadata = {
-  title: "47 Agent System | Fully Automated Agency",
-  description: "Deploy an AI system that replaces your entire agency workflow using 47 interconnected AI agents.",
+  title: "Agency 47 — Digital Design Studio",
+  description:
+    "We build websites, branding, software and mobile apps — digital products for ambitious brands.",
 };
 
 export default function RootLayout({
@@ -14,14 +17,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&family=Kanit:ital,wght@1,700;1,800&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.cdnfonts.com/css/switzer"
+          rel="stylesheet"
+        />
       </head>
-      <body>
-        <BackgroundVideo />
+      <body suppressHydrationWarning>
+        <Header />
         {children}
         <Footer />
+        <GrainOverlay />
+        <ScrollReveal />
       </body>
     </html>
   );
