@@ -135,15 +135,15 @@ export default function ServicesPage() {
               </div>
               <div className="cta-meta-item">
                 <span className="cta-meta-label">Format</span>
-                <span className="cta-meta-value">Free consultation</span>
+                <span className="cta-meta-value">Free automation audit</span>
               </div>
             </div>
           </div>
           <div className="cta-right">
             <div className="cta-form-card">
               <div className="cta-form-head">
-                <div className="cta-form-title">Start a project</div>
-                <div className="cta-form-eyebrow">Fill in your details below</div>
+                <div className="cta-form-title">Get your free audit</div>
+                <div className="cta-form-eyebrow">We&apos;ll map your automation opportunities</div>
               </div>
               <form className="contact-form">
                 <div className="contact-form-row">
@@ -189,7 +189,7 @@ export default function ServicesPage() {
                   style={{ width: "100%", justifyContent: "center" }}
                 >
                   <span className="btn-dot" />
-                  <span>Send brief&nbsp;&rarr;</span>
+                  <span>Get free audit&nbsp;&rarr;</span>
                 </button>
               </form>
             </div>

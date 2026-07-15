@@ -60,8 +60,9 @@ export default function Home() {
           </h1>
 
           <p className="hero-sub">
-            From AI agents to fully orchestrated business workflows, we transform
-            fragmented operations into self-improving systems built for modern growth.
+            Your team is drowning in manual tasks. We build AI agents, voice systems,
+            and workflow automations that run your operations 24/7 — so you scale
+            without scaling headcount.
           </p>
 
           <HeroStats />
@@ -156,15 +157,15 @@ export default function Home() {
               </div>
               <div className="cta-meta-item">
                 <span className="cta-meta-label">Format</span>
-                <span className="cta-meta-value">Free consultation</span>
+                <span className="cta-meta-value">Free automation audit</span>
               </div>
             </div>
           </div>
           <div className="cta-right">
             <div className="cta-form-card">
               <div className="cta-form-head">
-                <div className="cta-form-title">Start a project</div>
-                <div className="cta-form-eyebrow">Fill in your details below</div>
+                <div className="cta-form-title">Get your free audit</div>
+                <div className="cta-form-eyebrow">We&apos;ll map your automation opportunities</div>
               </div>
               <form className="contact-form">
                 <div className="contact-form-row">
@@ -190,7 +191,7 @@ export default function Home() {
                   />
                 </div>
                 <button type="submit" className="shiny-cta" style={{ width: "100%", justifyContent: "center" }} suppressHydrationWarning>
-                  <span>Send brief&nbsp;&rarr;</span>
+                  <span>Get free audit&nbsp;&rarr;</span>
                 </button>
               </form>
             </div>
