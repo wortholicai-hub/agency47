@@ -6,9 +6,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 import GrainOverlay from "@/components/GrainOverlay";
 
 export const metadata: Metadata = {
-  title: "Agency 47 — Digital Design Studio",
+  title: "Agency 47 — AI Automation Agency",
   description:
-    "We build websites, branding, software and mobile apps — digital products for ambitious brands.",
+    "We build AI agents, workflow automations, voice AI systems, and outreach pipelines — turning fragmented operations into self-running systems.",
 };
 
 export default function RootLayout({

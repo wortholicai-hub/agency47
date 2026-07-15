@@ -4,17 +4,17 @@ const footerColumns = [
   {
     title: "Services",
     links: [
-      { label: "Websites", href: "/services" },
-      { label: "Branding", href: "/services" },
-      { label: "Software", href: "/services" },
-      { label: "Mobile Apps", href: "/services" },
+      { label: "AI Agents", href: "/services" },
+      { label: "Workflows", href: "/services" },
+      { label: "Voice AI", href: "/services" },
+      { label: "Outreach", href: "/services" },
     ],
   },
   {
-    title: "Studio",
+    title: "Company",
     links: [
       { label: "About", href: "/about" },
-      { label: "Portfolio", href: "/portfolio" },
+      { label: "Case Studies", href: "/portfolio" },
       { label: "Blog", href: "/blog" },
     ],
   },
@@ -40,7 +40,7 @@ const footerColumns = [
     links: [
       { label: "LinkedIn", href: "#" },
       { label: "X / Twitter", href: "#" },
-      { label: "Dribbble", href: "#" },
+      { label: "YouTube", href: "#" },
       { label: "GitHub", href: "#" },
     ],
   },
@@ -56,7 +56,7 @@ export default function Footer() {
               <span>Agency 47</span>
             </Link>
             <p className="footer-tagline">
-              Digital products for ambitious brands.
+              AI-powered automation for modern businesses.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export default function Footer() {
           <span className="footer-copy">
             &copy; {new Date().getFullYear()} Agency 47. All rights reserved.
           </span>
-          <span className="footer-place">Crafted with precision.</span>
+          <span className="footer-place">Engineered for scale.</span>
         </div>
       </div>
     </footer>

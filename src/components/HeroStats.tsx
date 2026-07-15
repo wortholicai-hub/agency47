@@ -4,19 +4,19 @@ import { useRef, useState, useCallback, useEffect } from "react";
 
 const stats = [
   {
-    num: "97+",
-    label: "Performance",
-    words: ["Fast", "Reliable", "SEO", "Accessible", "Optimized"],
+    num: "500k+",
+    label: "Tasks automated",
+    words: ["Workflows", "Emails", "Calls", "Leads", "Reports"],
   },
   {
-    num: "48h",
-    label: "Turnaround",
-    words: ["Discovery", "Planning", "Prototype", "Kickoff", "Delivery"],
+    num: "40+",
+    label: "Systems built",
+    words: ["AI Agents", "Pipelines", "Voice Bots", "CRM Flows", "Outreach"],
   },
   {
-    num: "6+",
-    label: "Years",
-    words: ["Building", "Scaling", "Learning", "Innovation", "Experience"],
+    num: "12x",
+    label: "Avg. ROI",
+    words: ["Faster", "Cheaper", "Scalable", "Reliable", "24/7"],
   },
 ];
 

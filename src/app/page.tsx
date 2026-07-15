@@ -10,33 +10,33 @@ import CrystalModelLoader from "@/components/CrystalModelLoader";
 const faqs = [
   {
     num: "01",
-    q: "What does Agency 47 build?",
-    a: "Premium websites, brands, software, mobile apps, and AI-enabled systems. Most projects combine two or more of those areas.",
+    q: "What does Agency 47 do?",
+    a: "We build AI agents, workflow automations, voice AI systems, and automated outreach pipelines. Most projects combine multiple systems into one unified operation.",
   },
   {
     num: "02",
-    q: "How long does a project take?",
-    a: "Focused websites usually take 4 to 6 weeks. Brand systems take 6 to 8 weeks. Product and software builds are scoped by milestone.",
+    q: "How long does implementation take?",
+    a: "Most automation systems go live within 2 to 4 weeks. Complex multi-system builds are scoped by milestone with clear deliverables at each stage.",
   },
   {
     num: "03",
-    q: "What technologies do you use?",
-    a: "Next.js, React, TypeScript, Tailwind CSS, Framer Motion for web. React Native for mobile. Custom APIs and automation with Node.js and Python.",
+    q: "What platforms do you integrate with?",
+    a: "n8n, Make, Zapier, GoHighLevel, HubSpot, Salesforce, OpenAI, Anthropic, Twilio, ElevenLabs, Retell AI, and dozens more. We connect whatever your business runs on.",
   },
   {
     num: "04",
-    q: "Do we get the source code?",
-    a: "Yes. The build moves into your GitHub with deployment notes and full access once the project is complete.",
+    q: "Do we own the automations you build?",
+    a: "Yes. Every workflow, agent, and integration we build belongs to you. Full documentation and access are included so your team can maintain and extend them.",
   },
   {
     num: "05",
     q: "What does pricing look like?",
-    a: "Projects start at $5,000 for focused websites. Larger builds are scoped by milestone. We give you a clear estimate before any work begins.",
+    a: "Automation projects start at $3,000 for focused workflows. Larger AI agent builds and enterprise integrations are scoped by milestone. We give you a clear estimate before any work begins.",
   },
   {
     num: "06",
     q: "How do we get started?",
-    a: "Fill in the contact form or email us. We respond within 24 hours with a clear next step — no sales pitch, just a sharp plan.",
+    a: "Fill in the contact form or email us. We respond within 24 hours with a free automation audit — no sales pitch, just a clear plan to eliminate your bottlenecks.",
   },
 ];
 
@@ -80,25 +80,25 @@ export default function Home() {
           <div className="about-grid">
             <div>
               <h2 className="about-name">
-                One studio. Four disciplines. Zero <em>fragmentation</em>
+                One team. Full-stack automation. Zero <em>fragmentation</em>
               </h2>
               <p className="about-text">
-                Agency 47 is a digital design studio that handles strategy, visual identity,
-                engineering, and launch under one roof. We exist to build digital products
-                that feel inevitable — sharp, fast, and conversion-focused.
+                Agency 47 is an AI automation studio that handles strategy, integration,
+                deployment, and optimization under one roof. We exist to turn fragmented
+                operations into self-running systems — so your team focuses on growth, not busywork.
               </p>
               <div className="about-stats">
                 <div className="about-stat">
-                  <strong>50+</strong>
-                  <span>Projects shipped</span>
+                  <strong>40+</strong>
+                  <span>Systems deployed</span>
                 </div>
                 <div className="about-stat">
-                  <strong>6</strong>
-                  <span>Years running</span>
+                  <strong>500k</strong>
+                  <span>Tasks automated</span>
                 </div>
                 <div className="about-stat">
-                  <strong>97</strong>
-                  <span>Avg. score</span>
+                  <strong>12x</strong>
+                  <span>Avg. ROI</span>
                 </div>
               </div>
             </div>
@@ -144,10 +144,10 @@ export default function Home() {
       <section className="cta">
         <div className="cta-inner">
           <div className="cta-left">
-            <h2 className="cta-title">Let&apos;s build something <em>remarkable</em></h2>
+            <h2 className="cta-title">Let&apos;s automate your <em>growth</em></h2>
             <p className="cta-sub">
-              Tell us about your project and we&apos;ll respond within 24 hours with a clear
-              next step — no sales pitch, just a sharp plan.
+              Tell us about your operations and we&apos;ll respond within 24 hours with a free
+              automation audit — no sales pitch, just a clear plan to eliminate bottlenecks.
             </p>
             <div className="cta-meta">
               <div className="cta-meta-item">
@@ -185,7 +185,7 @@ export default function Home() {
                   <label className="contact-field-label">Project <span className="contact-field-required">*</span></label>
                   <textarea
                     className="contact-field-input contact-field-textarea"
-                    placeholder="Tell us about your project..."
+                    placeholder="Tell us what you want to automate..."
                     suppressHydrationWarning
                   />
                 </div>

@@ -116,10 +116,10 @@ export default function BlogPost() {
           <span className="post-author-card-avatar">47</span>
           <div>
             <div className="post-author-card-name">Agency 47 Team</div>
-            <div className="post-author-card-role">Digital Design Studio</div>
+            <div className="post-author-card-role">AI Automation Agency</div>
             <p className="post-author-card-text">
-              We build websites, branding, software and mobile apps for
-              ambitious brands.
+              We build AI agents, workflow automations, voice AI systems, and
+              outreach pipelines for modern businesses.
             </p>
           </div>
         </div>

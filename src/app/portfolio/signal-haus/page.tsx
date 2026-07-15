@@ -16,7 +16,7 @@ export default function SignalHausCaseStudy() {
           </div>
           <figure className="pdetail-hero-cover">
             <div className="pdetail-hero-cover-tag">
-              <span>Brand + Website</span> <span>2024</span>
+              <span>Voice AI + Outreach</span> <span>2024</span>
             </div>
             <div style={{ width: "100%", height: "100%", background: "var(--bg-elev)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)", fontFamily: "var(--font-mono)", fontSize: "0.8rem" }}>Signal Haus Cover</div>
           </figure>
@@ -29,7 +29,7 @@ export default function SignalHausCaseStudy() {
           <div className="pdetail-fact"><dt>Client</dt><dd>Signal Haus Media</dd></div>
           <div className="pdetail-fact"><dt>Industry</dt><dd>Media &middot; Marketing</dd></div>
           <div className="pdetail-fact"><dt>Year</dt><dd>2024</dd></div>
-          <div className="pdetail-fact"><dt>Services</dt><dd>Branding &middot; Website &middot; SEO</dd></div>
+          <div className="pdetail-fact"><dt>Services</dt><dd>Voice AI &middot; Outreach &middot; CRM</dd></div>
           <div className="pdetail-fact"><dt>Location</dt><dd>Berlin, Germany</dd></div>
         </dl>
       </section>
@@ -37,15 +37,15 @@ export default function SignalHausCaseStudy() {
       {/* LEDE */}
       <section className="pdetail-showcase">
         <div className="pdetail-showcase-head">
-          <p className="pdetail-lede">Signal Haus had outgrown their visual identity. The brand felt dated, the website was slow, and organic traffic had plateaued. They needed a complete refresh.</p>
+          <p className="pdetail-lede">Signal Haus was spending $15k/month on cold callers and manual outreach with declining results. They needed AI voice agents and automated sequences to scale pipeline without scaling headcount.</p>
         </div>
       </section>
 
       {/* BRAND SPRINT */}
       <section className="pdetail-showcase">
         <div className="pdetail-showcase-head">
-          <div className="pdetail-eyebrow">Brand Sprint</div>
-          <h2 className="pdetail-showcase-title">New identity system in three weeks</h2>
+          <div className="pdetail-eyebrow">Voice AI</div>
+          <h2 className="pdetail-showcase-title">AI voice agents handling inbound and outbound calls 24/7</h2>
         </div>
         <div className="pdetail-gallery">
           <figure className="pdetail-shot" style={{"--i": 0} as any}>
@@ -60,8 +60,8 @@ export default function SignalHausCaseStudy() {
       {/* WEB BUILD */}
       <section className="pdetail-showcase">
         <div className="pdetail-showcase-head">
-          <div className="pdetail-eyebrow">Web Build</div>
-          <h2 className="pdetail-showcase-title">High-performance site with 0.9s load time</h2>
+          <div className="pdetail-eyebrow">Outreach System</div>
+          <h2 className="pdetail-showcase-title">Multi-channel sequences across email, LinkedIn, and SMS</h2>
         </div>
         <div className="pdetail-gallery">
           <figure className="pdetail-shot" style={{"--i": 0} as any}>
@@ -77,7 +77,7 @@ export default function SignalHausCaseStudy() {
       <section className="pdetail-showcase">
         <div className="pdetail-showcase-head">
           <div className="pdetail-eyebrow">Results</div>
-          <h2 className="pdetail-showcase-title">2.4x organic traffic increase, load time cut by 80%</h2>
+          <h2 className="pdetail-showcase-title">3x more meetings booked, 60% reduction in sales team workload</h2>
         </div>
         <div className="pdetail-gallery">
           <figure className="pdetail-shot" style={{"--i": 0} as any}>
@@ -94,7 +94,7 @@ export default function SignalHausCaseStudy() {
         <div className="pdetail-cta-inner">
           <div className="pdetail-eyebrow">Next project?</div>
           <h2 className="pdetail-cta-title">Ready for your <em>transformation</em>?</h2>
-          <p className="pdetail-cta-text">Tell us about your project and we&apos;ll respond within 24 hours.</p>
+          <p className="pdetail-cta-text">Tell us about your operations and we&apos;ll respond within 24 hours with a free automation audit.</p>
           <div className="pdetail-cta-actions">
             <Link href="/contact" className="shiny-cta"><span className="btn-dot" /><span>Start a project&nbsp;&rarr;</span></Link>
             <Link href="/portfolio" className="btn-secondary">More work</Link>

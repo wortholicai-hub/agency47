@@ -3,50 +3,50 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Websites",
-    desc: "High-performance marketing sites, landing pages, and web applications built with Next.js, React, and TypeScript.",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+    title: "AI Agents",
+    desc: "Custom AI agents that handle leads, qualify prospects, answer support tickets, and close deals — running 24/7 without human intervention.",
+    tags: ["OpenAI", "Anthropic", "LangChain", "RAG"],
   },
   {
     num: "02",
-    title: "Branding",
-    desc: "Visual identity systems that make your brand unmistakable — from logo to guidelines to every touchpoint in between.",
-    tags: ["Logo", "Identity", "Guidelines", "Typography"],
+    title: "Workflow Automation",
+    desc: "End-to-end business automation that connects your CRM, email, invoicing, and support into one self-running system that scales with you.",
+    tags: ["n8n", "Make", "Zapier", "APIs"],
   },
   {
     num: "03",
-    title: "Software",
-    desc: "Custom platforms, internal tools, and automation systems engineered for scale and built to solve real problems.",
-    tags: ["Node.js", "Python", "APIs", "Automation"],
+    title: "Voice AI",
+    desc: "AI-powered phone systems that answer, route, and resolve calls in natural language. Your always-on receptionist that never drops a lead.",
+    tags: ["Retell AI", "ElevenLabs", "Twilio", "VAPI"],
   },
   {
     num: "04",
-    title: "Mobile Apps",
-    desc: "Cross-platform mobile applications that feel native, perform fast, and ship on both iOS and Android.",
-    tags: ["React Native", "iOS", "Android", "Flutter"],
+    title: "Outreach & CRM",
+    desc: "Automated multi-channel outreach and CRM pipelines. Email, LinkedIn, and SMS sequences that book meetings and nurture leads on autopilot.",
+    tags: ["GoHighLevel", "HubSpot", "Salesforce", "SendGrid"],
   },
 ];
 
 const processSteps = [
   {
     num: "01",
-    title: "Strategy",
-    desc: "We define goals, map user journeys, and build a roadmap before a single pixel moves.",
+    title: "Audit",
+    desc: "We map your current operations, identify bottlenecks, and find the highest-ROI automation opportunities.",
   },
   {
     num: "02",
-    title: "Design",
-    desc: "Visual identity, wireframes, and high-fidelity prototypes — tested and refined.",
+    title: "Architect",
+    desc: "We design the system — which tools to connect, what logic to build, and how data flows between them.",
   },
   {
     num: "03",
-    title: "Build",
-    desc: "Clean, performant code. Every component built for speed, accessibility, and scale.",
+    title: "Build & Test",
+    desc: "We build every workflow, agent, and integration. Rigorous testing with your real data before anything goes live.",
   },
   {
     num: "04",
-    title: "Launch & Care",
-    desc: "Deployment, monitoring, and ongoing optimization. We stay with you post-launch.",
+    title: "Deploy & Optimize",
+    desc: "Go live with monitoring dashboards. We track performance, fix edge cases, and continuously improve your system.",
   },
 ];
 
@@ -62,8 +62,8 @@ export default function ServicesPage() {
             Our <em>Services</em>
           </h1>
           <p className="page-hero-lede">
-            Websites, branding, software, and mobile apps — everything your brand
-            needs to compete at the highest level, built under one roof.
+            AI agents, workflow automation, voice AI, and outreach systems — everything
+            your business needs to run on autopilot, built under one roof.
           </p>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function ServicesPage() {
         <div className="container">
           <div className="section-head">
             <h2>
-              Four disciplines. One <em>studio</em>
+              Four systems. One <em>agency</em>
             </h2>
           </div>
 
@@ -101,7 +101,7 @@ export default function ServicesPage() {
         <div className="container">
           <div className="section-head">
             <h2>
-              Four steps. Zero <em>guesswork</em>
+              Four phases. Zero <em>guesswork</em>
             </h2>
           </div>
 
@@ -122,11 +122,11 @@ export default function ServicesPage() {
         <div className="cta-inner">
           <div className="cta-left">
             <h2 className="cta-title">
-              Let&apos;s build something <em>remarkable</em>
+              Let&apos;s automate your <em>growth</em>
             </h2>
             <p className="cta-sub">
-              Tell us about your project and we&apos;ll respond within 24 hours
-              with a clear next step — no sales pitch, just a sharp plan.
+              Tell us about your operations and we&apos;ll respond within 24 hours
+              with a free automation audit — no sales pitch, just a clear plan.
             </p>
             <div className="cta-meta">
               <div className="cta-meta-item">
@@ -180,7 +180,7 @@ export default function ServicesPage() {
                   </label>
                   <textarea
                     className="contact-field-input contact-field-textarea"
-                    placeholder="Tell us about your project..."
+                    placeholder="Tell us what you want to automate..."
                   />
                 </div>
                 <button

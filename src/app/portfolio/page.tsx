@@ -3,43 +3,43 @@ import Link from "next/link";
 const projects = [
   {
     title: "Atlas Commerce",
-    tag: "Website + Branding",
-    desc: "A premium storefront and content engine built for a category leader with a high-consideration buyer journey.",
+    tag: "AI Agents + CRM",
+    desc: "AI-powered lead qualification and CRM automation that tripled conversion rates and eliminated manual follow-up for an e-commerce brand.",
     year: "2025",
     slug: "atlas-commerce",
   },
   {
     title: "Northline Ops",
-    tag: "Software + Automation",
-    desc: "A private operating system that turns requests, approvals, and reporting into one measurable workflow.",
+    tag: "Workflow Automation",
+    desc: "End-to-end operations automation that replaced 12,000+ manual tasks per month with intelligent workflows across logistics and approvals.",
     year: "2025",
     slug: "northline-ops",
   },
   {
     title: "Signal Haus",
-    tag: "Brand + Website",
-    desc: "A full identity refresh and high-performance web build designed around proof, clarity, and conversion.",
+    tag: "Voice AI + Outreach",
+    desc: "AI voice agents and multi-channel outreach system that books 3x more meetings while reducing sales team workload by 60%.",
     year: "2024",
     slug: "signal-haus",
   },
   {
     title: "Quantum AI",
-    tag: "Website + Software",
-    desc: "AI-powered analytics platform with real-time dashboards, predictive models, and automated reporting pipelines.",
+    tag: "AI Pipeline + Analytics",
+    desc: "Automated data pipeline with AI-powered analytics that surfaces insights in real-time and eliminates 40+ hours of manual reporting weekly.",
     year: "2024",
     slug: "quantum-ai",
   },
   {
     title: "Meridian Finance",
-    tag: "Mobile App + Branding",
-    desc: "Complete brand identity and mobile banking experience for a next-gen fintech targeting underserved markets.",
+    tag: "CRM + Onboarding",
+    desc: "Automated client onboarding and CRM pipeline that reduced processing time from 5 days to 4 hours for a fintech startup.",
     year: "2024",
     slug: "meridian-finance",
   },
   {
     title: "Vertex SaaS",
-    tag: "Software Platform",
-    desc: "Full-stack SaaS platform rebuild with modern architecture, improved UX, and scalable infrastructure.",
+    tag: "Workflow + AI Support",
+    desc: "AI customer support agent and workflow automation that cut ticket resolution time by 70% and scaled support without new hires.",
     year: "2023",
     slug: "vertex-saas",
   },
@@ -57,8 +57,8 @@ export default function PortfolioPage() {
             Our <em>Work</em>
           </h1>
           <p className="page-hero-lede">
-            Strategy, design, and engineering combined into outcomes our clients
-            measure. Here are the projects that moved the needle.
+            AI agents, workflow automation, and intelligent systems combined into
+            measurable outcomes. Here are the automations that moved the needle.
           </p>
         </div>
       </section>
@@ -68,7 +68,7 @@ export default function PortfolioPage() {
         <div className="container">
           <div className="section-head">
             <h2>
-              Projects that moved the <em>needle</em>
+              Automations that moved the <em>needle</em>
             </h2>
           </div>
 
@@ -99,11 +99,11 @@ export default function PortfolioPage() {
         <div className="cta-inner">
           <div className="cta-left">
             <h2 className="cta-title">
-              Let&apos;s build something <em>remarkable</em>
+              Let&apos;s automate your <em>growth</em>
             </h2>
             <p className="cta-sub">
-              Tell us about your project and we&apos;ll respond within 24 hours
-              with a clear next step — no sales pitch, just a sharp plan.
+              Tell us about your operations and we&apos;ll respond within 24 hours
+              with a free automation audit — no sales pitch, just a clear plan.
             </p>
             <div className="cta-meta">
               <div className="cta-meta-item">
@@ -157,7 +157,7 @@ export default function PortfolioPage() {
                   </label>
                   <textarea
                     className="contact-field-input contact-field-textarea"
-                    placeholder="Tell us about your project..."
+                    placeholder="Tell us what you want to automate..."
                   />
                 </div>
                 <button

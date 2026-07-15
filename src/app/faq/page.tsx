@@ -20,75 +20,76 @@ const tabs: { label: Category; count: number }[] = [
   { label: "Pricing", count: 2 },
 ];
 
+
 const faqs: FaqItem[] = [
   {
     num: "01",
-    question: "What does Agency 47 build?",
+    question: "What does Agency 47 do?",
     answer:
-      "Premium websites, brand systems, custom software, mobile apps, and AI-enabled automation. Most projects combine two or more disciplines for a cohesive result.",
+      "We build AI agents, workflow automations, voice AI systems, CRM pipelines, and automated outreach. Most projects combine multiple systems into one unified, self-running operation.",
     category: "General",
   },
   {
     num: "02",
-    question: "Do you work with startups or only established companies?",
+    question: "Do you work with startups or only enterprise?",
     answer:
-      "Both. We work with funded startups launching their first product and established companies upgrading their digital presence. The common thread is ambition and clear goals.",
+      "Both. We work with funded startups automating from day one and established companies replacing manual processes with AI. The common thread is a desire to scale without scaling headcount.",
     category: "General",
   },
   {
     num: "03",
-    question: "Can you work with our existing team?",
+    question: "Can you work with our existing systems?",
     answer:
-      "Absolutely. We integrate with your designers, developers, or marketing team. We adapt to your tools, repos, and communication style.",
+      "Absolutely. We integrate with your existing CRM, tools, and platforms. We don't rip and replace — we connect and automate what you already use.",
     category: "General",
   },
   {
     num: "04",
     question: "What does the process look like?",
     answer:
-      "Strategy first, then design, then build, then launch. Each phase has clear deliverables and review points. You are involved at every stage without micromanaging.",
+      "Audit first — we map your operations and find the highest-ROI opportunities. Then we architect, build, test, and deploy. Each phase has clear deliverables. Most systems go live within 2-4 weeks.",
     category: "Process",
   },
   {
     num: "05",
-    question: "How long does a typical project take?",
+    question: "How long does implementation take?",
     answer:
-      "Focused websites take 4 to 6 weeks. Brand systems take 6 to 8 weeks. Software and app builds are scoped by milestone. We give you a timeline in the first proposal.",
+      "Focused automations take 1 to 2 weeks. Multi-system builds take 3 to 6 weeks. Enterprise deployments are scoped by milestone. We give you a timeline in the first proposal.",
     category: "Process",
   },
   {
     num: "06",
-    question: "What about ongoing support after launch?",
+    question: "What about ongoing support after deployment?",
     answer:
-      "We offer retainer packages for ongoing development, updates, and optimization. Many clients keep us on for iterative improvements after launch.",
+      "We offer monitoring and optimization retainers. We track performance, fix edge cases, and continuously improve your automations. Most clients keep us on because automation is never truly finished.",
     category: "Process",
   },
   {
     num: "07",
-    question: "What technologies do you use?",
+    question: "What platforms do you integrate with?",
     answer:
-      "Next.js, React, TypeScript, and Tailwind for web. React Native for mobile. Node.js, Python, and PostgreSQL for backends. We choose the stack based on your specific needs.",
+      "n8n, Make, Zapier, GoHighLevel, HubSpot, Salesforce, OpenAI, Anthropic, Twilio, ElevenLabs, Retell AI, SendGrid, Slack, and dozens more. If your business runs on it, we can automate it.",
     category: "Technical",
   },
   {
     num: "08",
-    question: "Do we get the source code?",
+    question: "Do we own the automations you build?",
     answer:
-      "Yes. Full source code, deployment documentation, and repository access are included. You own everything we build.",
+      "Yes. Every workflow, agent, and integration belongs to you. Full documentation, access credentials, and handover are included so your team can maintain and extend them.",
     category: "Technical",
   },
   {
     num: "09",
     question: "How much does a project cost?",
     answer:
-      "Projects typically range from $8k to $50k+ depending on scope. We provide a detailed quote after understanding your requirements in the initial consultation.",
+      "Automation projects start at $3,000 for focused workflows. AI agent builds and enterprise integrations range from $8k to $40k+. We provide a detailed quote after understanding your requirements.",
     category: "Pricing",
   },
   {
     num: "10",
     question: "How do we get started?",
     answer:
-      "Send us a brief through the contact form. Include your goals, timeline, and any reference material. We respond within 24 hours with a clear next step.",
+      "Send us a brief through the contact form. Tell us what processes are eating your team's time. We respond within 24 hours with a free automation audit and a clear plan.",
     category: "Pricing",
   },
 ];
@@ -129,7 +130,7 @@ export default function FAQPage() {
             </span>
           </h1>
           <p className="hero-sub">
-            Everything you need to know before we start working together.
+            Everything you need to know before we automate your operations.
           </p>
         </div>
       </section>
@@ -203,11 +204,11 @@ export default function FAQPage() {
           <div className="cta-inner">
             <div className="cta-left">
               <h2 className="cta-title">
-                Let&apos;s build something <em>remarkable</em>
+                Let&apos;s automate your <em>growth</em>
               </h2>
               <p className="cta-sub">
-                Tell us about your project and we&apos;ll respond within 24 hours
-                with a clear next step — no sales pitch, just a sharp plan.
+                Tell us about your operations and we&apos;ll respond within 24 hours
+                with a free automation audit — no sales pitch, just a clear plan.
               </p>
             </div>
             <div className="cta-right">

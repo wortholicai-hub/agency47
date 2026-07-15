@@ -3,44 +3,48 @@ import Link from "next/link";
 const values = [
   {
     num: "01",
-    title: "Craftsmanship",
-    desc: "Every pixel, every line of code, every interaction is intentional. We don't ship work that's just good enough — we ship work we're proud of.",
+    title: "Precision",
+    desc: "Every workflow, every integration, every AI prompt is engineered with intention. We don't ship automations that break — we ship systems that scale.",
   },
   {
     num: "02",
     title: "Speed",
-    desc: "We move fast without cutting corners. Most projects launch in 4-6 weeks because we plan sharply and execute without drift.",
+    desc: "We move fast without cutting corners. Most automation systems go live in 2-4 weeks because we plan sharply and execute without drift.",
   },
   {
     num: "03",
     title: "Transparency",
-    desc: "No hidden fees, no vague timelines, no black boxes. You see the work, the progress, and the decisions as they happen.",
+    desc: "No hidden fees, no vague timelines, no black boxes. You see every workflow, every integration, and every decision as it happens.",
   },
   {
     num: "04",
     title: "Partnership",
-    desc: "We don't disappear after launch. We stay invested in your success with ongoing optimization, support, and honest feedback.",
+    desc: "We don't disappear after deployment. We monitor, optimize, and improve your systems continuously — because automation is never truly finished.",
   },
 ];
 
 const stats = [
-  { num: "50+", label: "Projects shipped" },
-  { num: "6", label: "Years running" },
-  { num: "97", label: "Avg. Lighthouse" },
-  { num: "4", label: "Disciplines" },
+  { num: "40+", label: "Systems deployed" },
+  { num: "500k+", label: "Tasks automated" },
+  { num: "12x", label: "Avg. ROI" },
+  { num: "4", label: "Core systems" },
 ];
 
 const stack = [
-  "Next.js",
-  "React",
-  "TypeScript",
-  "Tailwind CSS",
-  "Node.js",
-  "Python",
-  "React Native",
-  "Figma",
-  "Framer",
-  "Vercel",
+  "n8n",
+  "Make",
+  "Zapier",
+  "GoHighLevel",
+  "HubSpot",
+  "OpenAI",
+  "Anthropic",
+  "Twilio",
+  "ElevenLabs",
+  "Retell AI",
+  "Salesforce",
+  "SendGrid",
+  "Slack",
+  "Activepieces",
 ];
 
 export default function AboutPage() {
@@ -56,8 +60,8 @@ export default function AboutPage() {
             About Agency <em>47</em>
           </h1>
           <p className="page-hero-lede">
-            A digital design studio that handles strategy, identity, engineering,
-            and launch under one roof — so the final product feels inevitable.
+            An AI automation agency that handles strategy, integration, deployment,
+            and optimization under one roof — so your operations run themselves.
           </p>
         </div>
       </section>
@@ -71,16 +75,16 @@ export default function AboutPage() {
                 Built for teams who refuse to <em>settle</em>
               </h2>
               <p className="about-text">
-                Agency 47 was founded on a simple observation: most digital projects
-                fail not because of bad ideas, but because of fragmented execution.
-                Strategy happens in one room, design in another, engineering in a third
-                — and by the time it ships, the original vision is unrecognizable.
+                Agency 47 was founded on a simple observation: most businesses are drowning
+                in manual processes. Sales teams chase leads by hand, support tickets sit
+                unanswered, and operations live in disconnected spreadsheets — while
+                competitors automate and scale.
               </p>
               <p className="about-text">
-                We built a studio where every discipline lives under one roof. From the
-                first strategy session to the final deployment, one team owns the full
-                lifecycle. The result is digital products that feel cohesive, perform
-                measurably, and ship on time.
+                We built an agency where AI, automation, and integration expertise live
+                under one roof. From the first operations audit to full-system deployment,
+                one team owns the entire lifecycle. The result is businesses that run
+                faster, cost less to operate, and scale without adding headcount.
               </p>
             </div>
             <div className="about-visual">
@@ -144,11 +148,11 @@ export default function AboutPage() {
         <div className="container">
           <div className="section-head">
             <h2>
-              Tools we <em>trust</em>
+              Platforms we <em>orchestrate</em>
             </h2>
             <p>
-              We choose proven technologies that scale, perform, and let us ship
-              with confidence.
+              We connect the tools that power modern business — so your operations
+              run themselves.
             </p>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "0.6rem" }}>
@@ -166,11 +170,11 @@ export default function AboutPage() {
         <div className="container">
           <div className="cta-inner" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", gap: "1.5rem" }}>
             <h2 className="cta-title">
-              Let&apos;s build something <em>remarkable</em>
+              Let&apos;s automate your <em>growth</em>
             </h2>
             <p className="cta-sub" style={{ marginBottom: 0 }}>
-              Tell us about your project and we&apos;ll respond within 24 hours
-              with a clear next step — no sales pitch, just a sharp plan.
+              Tell us about your operations and we&apos;ll respond within 24 hours
+              with a free automation audit — no sales pitch, just a clear plan.
             </p>
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}>
               <Link href="/contact" className="shiny-cta">

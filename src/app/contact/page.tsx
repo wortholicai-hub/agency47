@@ -13,8 +13,8 @@ export default function ContactPage() {
             Let&apos;s <em>Talk</em>
           </h1>
           <p className="page-hero-lede">
-            Have a project in mind? We&apos;d love to hear about it. Send us a
-            brief and we&apos;ll respond within 24 hours with a clear next step.
+            Ready to automate your operations? Tell us what&apos;s slowing you down
+            and we&apos;ll respond within 24 hours with a free automation audit.
           </p>
         </div>
       </section>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                 </label>
                 <textarea
                   className="contact-field-input contact-field-textarea"
-                  placeholder="Tell us about your project, goals, and timeline..."
+                  placeholder="Tell us what processes you want to automate..."
                   required
                 />
               </div>

@@ -16,7 +16,7 @@ export default function NorthlineOpsCaseStudy() {
           </div>
           <figure className="pdetail-hero-cover">
             <div className="pdetail-hero-cover-tag">
-              <span>Software + Automation</span> <span>2025</span>
+              <span>Workflow Automation</span> <span>2025</span>
             </div>
             <div style={{ width: "100%", height: "100%", background: "var(--bg-elev)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)", fontFamily: "var(--font-mono)", fontSize: "0.8rem" }}>Northline Ops Cover</div>
           </figure>
@@ -29,7 +29,7 @@ export default function NorthlineOpsCaseStudy() {
           <div className="pdetail-fact"><dt>Client</dt><dd>Northline Logistics</dd></div>
           <div className="pdetail-fact"><dt>Industry</dt><dd>Logistics &middot; Operations</dd></div>
           <div className="pdetail-fact"><dt>Year</dt><dd>2025</dd></div>
-          <div className="pdetail-fact"><dt>Services</dt><dd>Software &middot; Automation &middot; API</dd></div>
+          <div className="pdetail-fact"><dt>Services</dt><dd>Workflow Automation &middot; n8n &middot; API</dd></div>
           <div className="pdetail-fact"><dt>Location</dt><dd>Chicago, USA</dd></div>
         </dl>
       </section>
@@ -94,7 +94,7 @@ export default function NorthlineOpsCaseStudy() {
         <div className="pdetail-cta-inner">
           <div className="pdetail-eyebrow">Next project?</div>
           <h2 className="pdetail-cta-title">Ready for your <em>transformation</em>?</h2>
-          <p className="pdetail-cta-text">Tell us about your project and we&apos;ll respond within 24 hours.</p>
+          <p className="pdetail-cta-text">Tell us about your operations and we&apos;ll respond within 24 hours with a free automation audit.</p>
           <div className="pdetail-cta-actions">
             <Link href="/contact" className="shiny-cta"><span className="btn-dot" /><span>Start a project&nbsp;&rarr;</span></Link>
             <Link href="/portfolio" className="btn-secondary">More work</Link>

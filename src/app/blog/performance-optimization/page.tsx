@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function PerformanceOptimizationPost() {
+export default function WorkflowAutomationPost() {
   return (
     <main>
       <section className="post-hero">
@@ -10,22 +10,23 @@ export default function PerformanceOptimizationPost() {
         <div className="post-hero-inner">
           <Link href="/blog" className="post-back">&larr; Back to blog</Link>
           <div className="post-hero-meta">
-            <span className="post-hero-cat">Performance</span>
+            <span className="post-hero-cat">Workflows</span>
             <span className="post-hero-divider" />
             <span>Apr 10, 2026</span>
             <span className="post-hero-divider" />
             <span>10 min read</span>
           </div>
-          <h1 className="post-hero-title">Performance Optimization: From 4s to 0.8s in 5 Steps</h1>
+          <h1 className="post-hero-title">The Workflow Automation Playbook: Save 20+ Hours Per Week</h1>
           <p className="post-hero-lede">
-            Last quarter we took a client site from a painful 4-second load to sub-second
-            performance without a full rebuild. Here are the exact steps, in order of impact.
+            The exact framework we use to identify, build, and deploy automations
+            that eliminate busywork and let teams focus on what actually grows
+            the business.
           </p>
           <div className="post-hero-author">
             <span className="post-hero-author-avatar">A</span>
             <div>
               <div className="post-hero-author-name">Agency 47 Team</div>
-              <div className="post-hero-author-role">Engineering</div>
+              <div className="post-hero-author-role">Automation</div>
             </div>
           </div>
         </div>
@@ -35,64 +36,74 @@ export default function PerformanceOptimizationPost() {
         <div className="post-content-inner">
           <div className="article-body">
             <p className="article-p">
-              Performance optimization is the highest-ROI work we do for clients. Every second
-              of load time correlates directly with conversion rates, bounce rates, and user
-              satisfaction. Here&apos;s our exact playbook from a recent project.
+              Every business has processes that eat hours of human time but follow
+              predictable, repeatable patterns. These are the processes that should
+              never be done by a person. At Agency 47 we have a systematic framework
+              for finding these opportunities, building the automations, and
+              measuring the impact. Here is the exact playbook.
             </p>
 
-            <h2 className="article-h2">Step 1: Image Optimization (saved 1.2s)</h2>
+            <h2 className="article-h2">Step 1: Map Your Operations (Week 1)</h2>
             <p className="article-p">
-              The single biggest win. We converted all images to WebP/AVIF with proper
-              srcset attributes, added lazy loading below the fold, and implemented blur
-              placeholders. Total image payload dropped from 4.2MB to 380KB.
+              Before building anything, we audit every process in the business. We
+              ask one question for each task: &ldquo;Does this require human
+              judgement, or does it follow rules?&rdquo; Rule-based tasks are
+              automation candidates. We document every step, every tool involved,
+              every handoff point, and every failure mode.
             </p>
             <ul className="article-ul">
-              <li>Replaced all PNG/JPEG with next-gen formats</li>
-              <li>Added width/height attributes to prevent layout shift</li>
-              <li>Implemented a CDN with automatic format negotiation</li>
-              <li>Set up proper cache headers for static assets</li>
+              <li>Interview each team to understand their daily workflows</li>
+              <li>Document every manual data entry, copy-paste, and status update</li>
+              <li>Identify the top 5 time-consuming processes by hours per week</li>
+              <li>Score each process by automation feasibility and ROI potential</li>
             </ul>
 
-            <h2 className="article-h2">Step 2: JavaScript Audit (saved 0.9s)</h2>
+            <h2 className="article-h2">Step 2: Pick the Highest-ROI Target</h2>
             <p className="article-p">
-              The site loaded 1.8MB of JavaScript on every page. After auditing, we found
-              that 60% was unused — analytics scripts loaded too early, libraries included
-              for one feature, and polyfills for browsers no one uses anymore.
-            </p>
-            <p className="article-p">
-              We deferred non-critical scripts, removed dead code, code-split by route,
-              and replaced heavy libraries with lighter alternatives.
+              Most businesses try to automate everything at once and end up
+              finishing nothing. We pick the single process that combines the
+              highest time cost with the lowest implementation complexity. Common
+              first targets: lead routing from forms to CRM, invoice processing,
+              appointment confirmation sequences, and support ticket triage.
             </p>
 
-            <h2 className="article-h2">Step 3: Critical CSS Extraction (saved 0.5s)</h2>
+            <h2 className="article-h2">Step 3: Build in Layers</h2>
             <p className="article-p">
-              A single 280KB CSS file was render-blocking the entire page. We extracted
-              critical above-the-fold styles into an inline block and deferred the rest.
-              First Contentful Paint improved dramatically.
+              We never build a complex automation in one shot. We start with the
+              core trigger-action loop, test it with real data, then add
+              conditional logic, error handling, and edge cases in successive
+              layers. Tools like n8n and Make let us prototype in hours and iterate
+              based on actual results. Every workflow gets a monitoring dashboard
+              from day one so we can track success rates and catch failures
+              instantly.
             </p>
 
-            <h2 className="article-h2">Step 4: Server-Side Improvements (saved 0.4s)</h2>
+            <h2 className="article-h2">Step 4: Add AI Where It Matters</h2>
             <p className="article-p">
-              TTFB was 800ms — unacceptable. We implemented edge caching, moved static
-              pages to CDN, added stale-while-revalidate headers for dynamic content,
-              and optimized database queries that were running on every request.
+              Not every automation needs AI. But for tasks that require
+              classification, summarization, or natural language understanding,
+              adding an LLM layer transforms what is possible. We use AI for email
+              categorization, lead scoring, support ticket routing, and document
+              extraction. The key is treating AI as one node in a larger
+              workflow&mdash;not as the entire system.
             </p>
 
-            <h2 className="article-h2">Step 5: Font Loading Strategy (saved 0.2s)</h2>
+            <h2 className="article-h2">Step 5: Measure and Expand</h2>
             <p className="article-p">
-              Custom fonts were blocking rendering. We switched to font-display: swap,
-              preloaded the primary font, subset the character set to reduce file size,
-              and used system font fallbacks that closely match the custom font metrics.
+              Every automation we deploy gets a before-and-after measurement:
+              hours saved per week, error rate reduction, and dollar value of time
+              recovered. Once the first automation proves its ROI, we expand to the
+              next process on the list. Within 90 days most clients have 3&ndash;5
+              automations running that collectively save 20+ hours per week.
             </p>
 
             <div className="article-callout">
-              <div className="article-callout-title">Key Takeaway</div>
-              <p className="article-callout-text">
-                Each optimization alone seems modest. Combined, they transformed the experience.
-                The site now loads in 0.8s, scores 97 on Lighthouse, and conversion rate
-                increased 23% in the month after these changes shipped. Performance isn&apos;t
-                just a technical metric — it&apos;s a business lever.
-              </p>
+              <strong>Key takeaway:</strong> Automation is not a technology
+              project&mdash;it is an operations project. The businesses that get
+              the most value start with a clear map of their processes, pick the
+              highest-impact target, and build iteratively. That is exactly how we
+              work at Agency&nbsp;47, and it is why our clients consistently see
+              12x ROI on their automation investment.
             </div>
           </div>
         </div>
@@ -103,9 +114,10 @@ export default function PerformanceOptimizationPost() {
           <span className="post-author-card-avatar">47</span>
           <div>
             <div className="post-author-card-name">Agency 47 Team</div>
-            <div className="post-author-card-role">Digital Design Studio</div>
+            <div className="post-author-card-role">AI Automation Agency</div>
             <p className="post-author-card-text">
-              We build websites, branding, software and mobile apps for ambitious brands.
+              We build AI agents, workflow automations, voice AI systems, and
+              outreach pipelines for modern businesses.
             </p>
           </div>
         </div>

@@ -3,10 +3,10 @@
 import Link from "next/link";
 
 const works = [
-  { num: "01", name: "Atlas Commerce", year: "2025", tag: "Website + Branding", href: "/portfolio/atlas-commerce" },
-  { num: "02", name: "Northline Ops", year: "2025", tag: "Software + Automation", href: "/portfolio/northline-ops" },
-  { num: "03", name: "Signal Haus", year: "2024", tag: "Brand + Website", href: "/portfolio/signal-haus" },
-  { num: "04", name: "Quantum AI", year: "2024", tag: "Website + Software", href: "/portfolio/quantum-ai" },
+  { num: "01", name: "Atlas Commerce", year: "2025", tag: "AI Agents + CRM", href: "/portfolio/atlas-commerce" },
+  { num: "02", name: "Northline Ops", year: "2025", tag: "Workflow Automation", href: "/portfolio/northline-ops" },
+  { num: "03", name: "Signal Haus", year: "2024", tag: "Voice AI + Outreach", href: "/portfolio/signal-haus" },
+  { num: "04", name: "Quantum AI", year: "2024", tag: "AI Pipeline + Analytics", href: "/portfolio/quantum-ai" },
 ];
 
 function TextRoll({ text }: { text: string }) {
@@ -63,7 +63,7 @@ export default function WorksSection() {
         <div className="works-header-line" />
         <div className="works-header-content">
           <h2 className="works-title">
-            Projects that moved<br />the <em>needle</em>
+            Automations that moved<br />the <em>needle</em>
           </h2>
         </div>
         <div className="works-header-line" />

@@ -2,27 +2,27 @@ import Link from "next/link";
 
 const posts = [
   {
-    title: "AI Automation in 2026",
+    title: "AI Automation in 2026: What Actually Works",
     tag: "AI / Automation",
     date: "Jun 2026",
     excerpt:
-      "How modern AI pipelines are reshaping agency workflows — from lead qualification to delivery. A practical look at what actually moves the needle.",
+      "We cut through the noise and share what AI tools, workflows, and strategies are delivering real ROI for businesses right now.",
     href: "/blog/ai-automation-2026",
   },
   {
-    title: "Next.js vs WordPress in 2026",
-    tag: "Development",
+    title: "Voice AI vs Human Agents: The Real Numbers",
+    tag: "Voice AI",
     date: "May 2026",
     excerpt:
-      "A head-to-head comparison of the two dominant web platforms — performance, flexibility, cost, and when each one makes sense.",
+      "A data-driven comparison of AI voice agents versus traditional call centers — cost, quality, scalability, and when each one makes sense.",
     href: "/blog/nextjs-vs-wordpress",
   },
   {
-    title: "Performance Optimization Guide",
-    tag: "Performance",
+    title: "The Workflow Automation Playbook",
+    tag: "Workflows",
     date: "Apr 2026",
     excerpt:
-      "The exact steps we use to take client sites from sluggish to sub-second. Speed is a feature — here is how to ship it.",
+      "The exact framework we use to identify, build, and deploy automations that save our clients 20+ hours per week. Step by step.",
     href: "/blog/performance-optimization",
   },
 ];
@@ -50,12 +50,12 @@ export default function BlogPage() {
               className="word hero-word-em"
               style={{ "--i": 3 } as React.CSSProperties}
             >
-              studio
+              lab
             </span>
           </h1>
           <p className="hero-sub">
-            Practical thinking on design, engineering, AI, and building digital
-            products that perform — straight from the Agency 47 studio.
+            Practical thinking on AI, automation, workflows, and building systems
+            that scale — straight from the Agency 47 lab.
           </p>
         </div>
       </section>
@@ -96,11 +96,11 @@ export default function BlogPage() {
           <div className="cta-inner">
             <div className="cta-left">
               <h2 className="cta-title">
-                Let&apos;s build something <em>remarkable</em>
+                Let&apos;s automate your <em>growth</em>
               </h2>
               <p className="cta-sub">
-                Tell us about your project and we&apos;ll respond within 24 hours
-                with a clear next step — no sales pitch, just a sharp plan.
+                Tell us about your operations and we&apos;ll respond within 24 hours
+                with a free automation audit — no sales pitch, just a clear plan.
               </p>
             </div>
             <div className="cta-right">
