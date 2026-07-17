@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PlexusBackground from "@/components/PlexusBackground";
 
 const services = [
   {
@@ -52,11 +53,15 @@ const processSteps = [
 
 export default function ServicesPage() {
   return (
-    <main>
+    <main className="services-page">
+      {/* Full-page animated plasma background */}
+      <PlexusBackground />
+
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <section className="page-hero services-hero">
         <div className="page-hero-bg" />
         <div className="page-hero-overlay" />
+
         <div className="page-hero-inner">
           <h1 className="page-hero-title">
             Our <em>Services</em>
@@ -69,21 +74,25 @@ export default function ServicesPage() {
       </section>
 
       {/* SERVICES GRID */}
-      <section className="section" id="services">
-        <div className="container">
-          <div className="section-head">
-            <h2>
-              Four systems. One <em>agency</em>
-            </h2>
-          </div>
-
-          <div className="service-grid">
-            {services.map((service) => (
-              <div key={service.num} className="service-card">
-                <div className="service-card-number">{service.num}</div>
-                <h3 className="service-card-title">{service.title}</h3>
-                <p className="service-card-desc">{service.desc}</p>
-                <div className="service-card-tags">
+      <section className="section services-offer-section" id="services">
+        <span className="services-offer-eyebrow">
+          What we&apos;re offering
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" width="20" height="20">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>
+        </span>
+        <h2 className="services-offer-title">
+          Four systems. One <em>agency</em>
+        </h2>
+        <div className="services-offer-grid">
+          {services.map((service) => (
+            <div key={service.num} className="offer-card">
+              <div className="offer-card-circle" />
+              <div className="offer-card-content">
+                <span className="offer-card-num">{service.num}</span>
+                <h3 className="offer-card-title">{service.title}</h3>
+                <p className="offer-card-desc">{service.desc}</p>
+                <div className="offer-card-tags">
                   {service.tags.map((tag) => (
                     <span key={tag} className="tag">
                       {tag}
@@ -91,8 +100,8 @@ export default function ServicesPage() {
                   ))}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
 

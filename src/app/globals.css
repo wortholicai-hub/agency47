@@ -1982,6 +1982,60 @@ details[open] .home-faq-icon span:last-child {
   right: 0;
 }
 
+/* ── Services page plasma background ── */
+.services-page {
+  position: relative;
+  background: #050505;
+}
+
+.services-page .services-plexus-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  image-rendering: auto;
+}
+
+.services-hero {
+  background: transparent;
+  min-height: 100vh;
+}
+
+.services-page .section,
+.services-page .cta {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+/* Remove all divider lines on services page */
+.services-page .page-hero {
+  border: none;
+}
+.services-page .page-hero::after {
+  display: none;
+}
+.services-page .page-hero-bg,
+.services-page .page-hero-overlay {
+  display: none;
+}
+.services-page .process-card {
+  border-color: transparent;
+  background: rgba(10, 10, 12, 0.55);
+}
+.services-page .process-card:hover {
+  border-color: rgba(220, 38, 38, 0.2);
+}
+.services-page .cta {
+  border-top: none;
+}
+.services-page .cta-form-card {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
 .page-hero-inner {
   z-index: 1;
   flex-direction: column;
@@ -2080,55 +2134,161 @@ details[open] .home-faq-icon span:last-child {
   font-weight: 500;
 }
 
-/* ===== SERVICE CARDS (services page) ===== */
-.service-grid {
+/* ===== SERVICES OFFER SECTION ===== */
+.services-offer-section {
+  text-align: center;
+  padding: 6rem 2.5rem;
+}
+
+.services-offer-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-offer-eyebrow svg {
+  color: var(--signal);
+}
+
+.services-offer-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--text);
+  max-width: 48rem;
+  margin: 0 auto 4rem;
+}
+
+.services-offer-title em {
+  font-family: var(--font-serif);
+  color: var(--signal);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.services-offer-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.25rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.service-grid .service-card {
-  padding: 2rem;
-  background: rgba(20, 20, 22, 0.5);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  transition: all 0.3s var(--easing);
+/* ── Offer card with circle reveal ── */
+.offer-card {
   position: relative;
+  background: rgba(18, 18, 20, 0.7);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
   overflow: hidden;
+  transition: box-shadow 0.4s ease;
+  min-height: 260px;
+  display: flex;
+  align-items: flex-end;
 }
 
-.service-grid .service-card:hover {
-  border-color: rgba(255, 255, 255, 0.14);
-  transform: translateY(-2px);
+.offer-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(220, 38, 38, 0.85);
+  transition: clip-path 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 0;
 }
 
-.service-card-number {
+.offer-card:nth-child(1)::before {
+  bottom: 0; right: 0;
+  clip-path: circle(calc(5rem + 7vw) at 100% 100%);
+}
+.offer-card:nth-child(2)::before {
+  bottom: 0; left: 0;
+  clip-path: circle(calc(5rem + 7vw) at 0% 100%);
+}
+.offer-card:nth-child(3)::before {
+  top: 0; right: 0;
+  clip-path: circle(calc(5rem + 7vw) at 100% 0%);
+}
+.offer-card:nth-child(4)::before {
+  top: 0; left: 0;
+  clip-path: circle(calc(5rem + 7vw) at 0% 0%);
+}
+
+.offer-card:hover::before {
+  clip-path: circle(150% at 50% 50%);
+}
+
+.offer-card:hover {
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+}
+
+.offer-card:nth-child(1) { align-items: flex-start; }
+.offer-card:nth-child(2) { align-items: flex-start; }
+.offer-card:nth-child(3) { align-items: flex-end; }
+.offer-card:nth-child(4) { align-items: flex-end; }
+
+.offer-card-circle {
+  display: none;
+}
+
+.offer-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.offer-card-num {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--signal);
   letter-spacing: 0.06em;
-  margin-bottom: 1rem;
+  display: block;
+  margin-bottom: 0.75rem;
+  transition: color 0.4s ease;
 }
 
-.service-card-title {
+.offer-card:hover .offer-card-num {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.offer-card-title {
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 0.65rem;
+  color: var(--text);
+  line-height: 1.2;
 }
 
-.service-card-desc {
+.offer-card-desc {
   color: var(--text-soft);
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.55;
   margin-bottom: 1.25rem;
+  transition: color 0.4s ease;
 }
 
-.service-card-tags {
+.offer-card:hover .offer-card-desc {
+  color: #fff;
+}
+
+.offer-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.offer-card:hover .tag {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
 }
 
 .tag {
@@ -3947,7 +4107,7 @@ details[open] .home-faq-icon span:last-child {
     right: 1rem;
     font-size: 4.5rem;
   }
-  .service-grid {
+  .services-offer-grid {
     grid-template-columns: 1fr;
   }
   .process-grid {
