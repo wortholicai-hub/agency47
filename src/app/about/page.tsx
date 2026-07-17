@@ -4,7 +4,7 @@ const values = [
   {
     num: "01",
     title: "Precision",
-    desc: "Every workflow, every integration, every AI prompt is engineered with intention. We don't ship automations that break — we ship systems that scale.",
+    desc: "Every workflow, every integration, every AI prompt is engineered with intention. We don't ship automations that break. We ship systems that scale.",
   },
   {
     num: "02",
@@ -19,7 +19,7 @@ const values = [
   {
     num: "04",
     title: "Partnership",
-    desc: "We don't disappear after deployment. We monitor, optimize, and improve your systems continuously — because automation is never truly finished.",
+    desc: "We don't disappear after deployment. We monitor, optimize, and improve your systems continuously, because automation is never truly finished.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function AboutPage() {
           </h1>
           <p className="page-hero-lede">
             An AI automation agency that handles strategy, integration, deployment,
-            and optimization under one roof — so your operations run themselves.
+            and optimization under one roof, so your operations run themselves.
           </p>
         </div>
       </section>
@@ -77,7 +77,7 @@ export default function AboutPage() {
               <p className="about-text">
                 Agency 47 was founded on a simple observation: most businesses are drowning
                 in manual processes. Sales teams chase leads by hand, support tickets sit
-                unanswered, and operations live in disconnected spreadsheets — while
+                unanswered, and operations live in disconnected spreadsheets while
                 competitors automate and scale.
               </p>
               <p className="about-text">
@@ -151,7 +151,7 @@ export default function AboutPage() {
               Platforms we <em>orchestrate</em>
             </h2>
             <p>
-              We connect the tools that power modern business — so your operations
+              We connect the tools that power modern business so your operations
               run themselves.
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function AboutPage() {
             </h2>
             <p className="cta-sub" style={{ marginBottom: 0 }}>
               Tell us about your operations and we&apos;ll respond within 24 hours
-              with a free automation audit — no sales pitch, just a clear plan.
+              with a free automation audit. No sales pitch, just a clear plan.
             </p>
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}>
               <Link href="/contact" className="shiny-cta">

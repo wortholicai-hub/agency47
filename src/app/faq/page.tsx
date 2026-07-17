@@ -40,14 +40,14 @@ const faqs: FaqItem[] = [
     num: "03",
     question: "Can you work with our existing systems?",
     answer:
-      "Absolutely. We integrate with your existing CRM, tools, and platforms. We don't rip and replace — we connect and automate what you already use.",
+      "Absolutely. We integrate with your existing CRM, tools, and platforms. We don't rip and replace. We connect and automate what you already use.",
     category: "General",
   },
   {
     num: "04",
     question: "What does the process look like?",
     answer:
-      "Audit first — we map your operations and find the highest-ROI opportunities. Then we architect, build, test, and deploy. Each phase has clear deliverables. Most systems go live within 2-4 weeks.",
+      "Audit first. We map your operations and find the highest-ROI opportunities. Then we architect, build, test, and deploy. Each phase has clear deliverables. Most systems go live within 2-4 weeks.",
     category: "Process",
   },
   {
@@ -208,7 +208,7 @@ export default function FAQPage() {
               </h2>
               <p className="cta-sub">
                 Tell us about your operations and we&apos;ll respond within 24 hours
-                with a free automation audit — no sales pitch, just a clear plan.
+                with a free automation audit. No sales pitch, just a clear plan.
               </p>
             </div>
             <div className="cta-right">

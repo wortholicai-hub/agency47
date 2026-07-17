@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
   {
@@ -63,7 +64,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* PORTFOLIO GRID */}
+      {/* PORTFOLIO SHOWCASE */}
       <section className="section" id="portfolio">
         <div className="container">
           <div className="section-head">
@@ -72,21 +73,35 @@ export default function PortfolioPage() {
             </h2>
           </div>
 
-          <div className="portfolio-grid">
-            {projects.map((project) => (
+          <div className="showcase-list">
+            {projects.map((project, i) => (
               <Link
                 href={`/portfolio/${project.slug}`}
                 key={project.slug}
-                className="portfolio-card"
+                className={`showcase-card ${i % 2 !== 0 ? "showcase-card--reverse" : ""}`}
               >
-                <div className="portfolio-card-bg" />
-                <div className="portfolio-card-arrow"><svg width="14" height="14" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 13L13 5M13 5H6M13 5V12" /></svg></div>
-                <div className="portfolio-card-content">
-                  <div className="portfolio-card-tag">
-                    {project.tag} &mdash; {project.year}
+                <div className="showcase-card-img">
+                  <Image
+                    src="/47logo.png"
+                    alt="Agency 47"
+                    width={200}
+                    height={200}
+                    className="showcase-card-logo"
+                  />
+                </div>
+                <div className="showcase-card-info">
+                  <div className="showcase-card-meta">
+                    <span className="showcase-card-tag">{project.tag}</span>
+                    <span className="showcase-card-year">{project.year}</span>
                   </div>
-                  <div className="portfolio-card-title">{project.title}</div>
-                  <div className="portfolio-card-desc">{project.desc}</div>
+                  <h3 className="showcase-card-name">{project.title}</h3>
+                  <p className="showcase-card-desc">{project.desc}</p>
+                  <span className="showcase-card-cta">
+                    View Project
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
                 </div>
               </Link>
             ))}
@@ -103,7 +118,7 @@ export default function PortfolioPage() {
             </h2>
             <p className="cta-sub">
               Tell us about your operations and we&apos;ll respond within 24 hours
-              with a free automation audit — no sales pitch, just a clear plan.
+              with a free automation audit. No sales pitch, just a clear plan.
             </p>
             <div className="cta-meta">
               <div className="cta-meta-item">

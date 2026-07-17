@@ -37,7 +37,7 @@ export default function QuantumAICaseStudy() {
       {/* LEDE */}
       <section className="pdetail-showcase">
         <div className="pdetail-showcase-head">
-          <p className="pdetail-lede">Quantum AI was drowning in manual data processing — analysts spent 40+ hours weekly pulling reports by hand. They needed automated pipelines that surface insights in real-time without human intervention.</p>
+          <p className="pdetail-lede">Quantum AI was drowning in manual data processing. Analysts spent 40+ hours weekly pulling reports by hand. They needed automated pipelines that surface insights in real-time without human intervention.</p>
         </div>
       </section>
 

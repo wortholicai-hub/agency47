@@ -38,7 +38,7 @@ export default function MeridianFinancePage() {
       <section className="pdetail-showcase">
         <div className="pdetail-showcase-head">
           <p className="pdetail-lede">
-            Meridian was onboarding new clients through a painful manual process — paper forms,
+            Meridian was onboarding new clients through a painful manual process. Paper forms,
             email chains, and compliance checks that took 5 days per client. They needed automated
             onboarding workflows and a CRM pipeline that handled everything from KYC to account activation.
           </p>

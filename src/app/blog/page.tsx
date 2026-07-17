@@ -14,7 +14,7 @@ const posts = [
     tag: "Voice AI",
     date: "May 2026",
     excerpt:
-      "A data-driven comparison of AI voice agents versus traditional call centers — cost, quality, scalability, and when each one makes sense.",
+      "A data-driven comparison of AI voice agents versus traditional call centers: cost, quality, scalability, and when each one makes sense.",
     href: "/blog/nextjs-vs-wordpress",
   },
   {
@@ -55,7 +55,7 @@ export default function BlogPage() {
           </h1>
           <p className="hero-sub">
             Practical thinking on AI, automation, workflows, and building systems
-            that scale — straight from the Agency 47 lab.
+            that scale, straight from the Agency 47 lab.
           </p>
         </div>
       </section>
@@ -100,7 +100,7 @@ export default function BlogPage() {
               </h2>
               <p className="cta-sub">
                 Tell us about your operations and we&apos;ll respond within 24 hours
-                with a free automation audit — no sales pitch, just a clear plan.
+                with a free automation audit. No sales pitch, just a clear plan.
               </p>
             </div>
             <div className="cta-right">

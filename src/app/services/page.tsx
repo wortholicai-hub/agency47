@@ -1,11 +1,12 @@
 import Link from "next/link";
 import PlexusBackground from "@/components/PlexusBackground";
+import ProcessPanel from "@/components/ProcessPanel";
 
 const services = [
   {
     num: "01",
     title: "AI Agents",
-    desc: "Custom AI agents that handle leads, qualify prospects, answer support tickets, and close deals — running 24/7 without human intervention.",
+    desc: "Custom AI agents that handle leads, qualify prospects, answer support tickets, and close deals, running 24/7 without human intervention.",
     tags: ["OpenAI", "Anthropic", "LangChain", "RAG"],
   },
   {
@@ -28,29 +29,6 @@ const services = [
   },
 ];
 
-const processSteps = [
-  {
-    num: "01",
-    title: "Audit",
-    desc: "We map your current operations, identify bottlenecks, and find the highest-ROI automation opportunities.",
-  },
-  {
-    num: "02",
-    title: "Architect",
-    desc: "We design the system — which tools to connect, what logic to build, and how data flows between them.",
-  },
-  {
-    num: "03",
-    title: "Build & Test",
-    desc: "We build every workflow, agent, and integration. Rigorous testing with your real data before anything goes live.",
-  },
-  {
-    num: "04",
-    title: "Deploy & Optimize",
-    desc: "Go live with monitoring dashboards. We track performance, fix edge cases, and continuously improve your system.",
-  },
-];
-
 export default function ServicesPage() {
   return (
     <main className="services-page">
@@ -67,7 +45,7 @@ export default function ServicesPage() {
             Our <em>Services</em>
           </h1>
           <p className="page-hero-lede">
-            AI agents, workflow automation, voice AI, and outreach systems — everything
+            AI agents, workflow automation, voice AI, and outreach systems. Everything
             your business needs to run on autopilot, built under one roof.
           </p>
         </div>
@@ -89,7 +67,6 @@ export default function ServicesPage() {
             <div key={service.num} className="offer-card">
               <div className="offer-card-circle" />
               <div className="offer-card-content">
-                <span className="offer-card-num">{service.num}</span>
                 <h3 className="offer-card-title">{service.title}</h3>
                 <p className="offer-card-desc">{service.desc}</p>
                 <div className="offer-card-tags">
@@ -106,25 +83,7 @@ export default function ServicesPage() {
       </section>
 
       {/* PROCESS */}
-      <section className="section" id="process">
-        <div className="container">
-          <div className="section-head">
-            <h2>
-              Four phases. Zero <em>guesswork</em>
-            </h2>
-          </div>
-
-          <div className="process-grid">
-            {processSteps.map((step) => (
-              <div key={step.num} className="process-card">
-                <div className="process-card-num">{step.num}</div>
-                <h3>{step.title}</h3>
-                <p>{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ProcessPanel />
 
       {/* CTA */}
       <section className="cta">
@@ -135,7 +94,7 @@ export default function ServicesPage() {
             </h2>
             <p className="cta-sub">
               Tell us about your operations and we&apos;ll respond within 24 hours
-              with a free automation audit — no sales pitch, just a clear plan.
+              with a free automation audit. No sales pitch, just a clear plan.
             </p>
             <div className="cta-meta">
               <div className="cta-meta-item">

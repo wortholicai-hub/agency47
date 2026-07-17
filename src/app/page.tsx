@@ -36,7 +36,7 @@ const faqs = [
   {
     num: "06",
     q: "How do we get started?",
-    a: "Fill in the contact form or email us. We respond within 24 hours with a free automation audit — no sales pitch, just a clear plan to eliminate your bottlenecks.",
+    a: "Fill in the contact form or email us. We respond within 24 hours with a free automation audit. No sales pitch, just a clear plan to eliminate your bottlenecks.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function Home() {
 
           <p className="hero-sub">
             Your team is drowning in manual tasks. We build AI agents, voice systems,
-            and workflow automations that run your operations 24/7 — so you scale
+            and workflow automations that run your operations 24/7, so you scale
             without scaling headcount.
           </p>
 
@@ -86,7 +86,7 @@ export default function Home() {
               <p className="about-text">
                 Agency 47 is an AI automation studio that handles strategy, integration,
                 deployment, and optimization under one roof. We exist to turn fragmented
-                operations into self-running systems — so your team focuses on growth, not busywork.
+                operations into self-running systems, so your team focuses on growth, not busywork.
               </p>
               <div className="about-stats">
                 <div className="about-stat">
@@ -148,7 +148,7 @@ export default function Home() {
             <h2 className="cta-title">Let&apos;s automate your <em>growth</em></h2>
             <p className="cta-sub">
               Tell us about your operations and we&apos;ll respond within 24 hours with a free
-              automation audit — no sales pitch, just a clear plan to eliminate bottlenecks.
+              automation audit. No sales pitch, just a clear plan to eliminate bottlenecks.
             </p>
             <div className="cta-meta">
               <div className="cta-meta-item">

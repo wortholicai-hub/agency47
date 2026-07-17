@@ -4,11 +4,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import GrainOverlay from "@/components/GrainOverlay";
+import ScrollTextReveal from "@/components/ScrollTextReveal";
 
 export const metadata: Metadata = {
-  title: "Agency 47 — AI Automation Agency",
+  title: "Agency 47 | AI Automation Agency",
   description:
-    "We build AI agents, workflow automations, voice AI systems, and outreach pipelines — turning fragmented operations into self-running systems.",
+    "We build AI agents, workflow automations, voice AI systems, and outreach pipelines, turning fragmented operations into self-running systems.",
 };
 
 export default function RootLayout({
@@ -36,6 +37,22 @@ export default function RootLayout({
         <Footer />
         <GrainOverlay />
         <ScrollReveal />
+        <ScrollTextReveal
+          selectors={[
+            ".cta-sub",
+            ".about-text",
+            ".blog-card-excerpt",
+            ".portfolio-card-desc",
+            ".pdetail-lede",
+            ".pdetail-cta-text",
+            ".post-hero-lede",
+            ".article-p",
+            ".post-author-card-text",
+            ".offer-card-desc",
+            ".service-description",
+            ".showcase-card-desc",
+          ]}
+        />
       </body>
     </html>
   );
