@@ -50,7 +50,6 @@ export default function RootLayout({
             ".post-author-card-text",
             ".offer-card-desc",
             ".service-description",
-            ".showcase-card-desc",
           ]}
         />
       </body>

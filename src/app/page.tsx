@@ -6,6 +6,7 @@ import HeroStats from "@/components/HeroStats";
 import PerksSection from "@/components/PerksSection";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import CrystalModelLoader from "@/components/CrystalModelLoader";
+import ReviewsSection from "@/components/ReviewsSection";
 
 const faqs = [
   {
@@ -113,6 +114,9 @@ export default function Home() {
 
       {/* PERKS */}
       <PerksSection />
+
+      {/* REVIEWS */}
+      <ReviewsSection />
 
       {/* FAQ */}
       <section className="section" id="faq">
