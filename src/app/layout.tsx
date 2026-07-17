@@ -41,7 +41,7 @@ export default function RootLayout({
           selectors={[
             ".cta-sub",
             ".about-text",
-            ".blog-card-excerpt",
+            ".bl-article-excerpt",
             ".portfolio-card-desc",
             ".pdetail-lede",
             ".pdetail-cta-text",
