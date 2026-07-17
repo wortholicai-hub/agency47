@@ -48,7 +48,6 @@ const projects = [
 export default function PortfolioPage() {
   return (
     <main>
-      {/* PAGE HERO */}
       <section className="page-hero">
         <div className="page-hero-bg" />
         <div className="page-hero-overlay" />
@@ -63,7 +62,6 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* PORTFOLIO GRID */}
       <section className="section" id="portfolio">
         <div className="container">
           <div className="section-head">
@@ -72,33 +70,31 @@ export default function PortfolioPage() {
             </h2>
           </div>
 
-          <div className="portfolio-grid">
+          <div className="pf-grid">
             {projects.map((project) => (
               <Link
                 href={`/portfolio/${project.slug}`}
                 key={project.slug}
-                className="portfolio-card"
+                className="pf-card"
               >
-                <div className="portfolio-card-bg" />
-                <div className="portfolio-card-arrow">
-                  <svg width="14" height="14" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 13L13 5M13 5H6M13 5V12" />
+                <div className="pf-card-top">
+                  <span className="pf-card-tag">{project.tag}</span>
+                  <span className="pf-card-year">{project.year}</span>
+                </div>
+                <h3 className="pf-card-title">{project.title}</h3>
+                <p className="pf-card-desc">{project.desc}</p>
+                <span className="pf-card-link">
+                  View case study
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
-                </div>
-                <div className="portfolio-card-content">
-                  <div className="portfolio-card-tag">
-                    {project.tag} · {project.year}
-                  </div>
-                  <div className="portfolio-card-title">{project.title}</div>
-                  <div className="portfolio-card-desc">{project.desc}</div>
-                </div>
+                </span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
       <section className="cta">
         <div className="cta-inner">
           <div className="cta-left">

@@ -91,7 +91,7 @@ export default function Home() {
               </p>
               <div className="about-stats">
                 <div className="about-stat">
-                  <strong>40+</strong>
+                  <strong>47+</strong>
                   <span>Systems deployed</span>
                 </div>
                 <div className="about-stat">

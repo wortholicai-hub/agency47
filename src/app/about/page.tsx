@@ -24,7 +24,7 @@ const values = [
 ];
 
 const stats = [
-  { num: "40+", label: "Systems deployed" },
+  { num: "47+", label: "Systems deployed" },
   { num: "500k+", label: "Tasks automated" },
   { num: "12x", label: "Avg. ROI" },
   { num: "4", label: "Core systems" },

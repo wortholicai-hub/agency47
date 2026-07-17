@@ -9,7 +9,7 @@ const stats = [
     words: ["Workflows", "Emails", "Calls", "Leads", "Reports"],
   },
   {
-    num: "40+",
+    num: "47+",
     label: "Systems built",
     words: ["AI Agents", "Pipelines", "Voice Bots", "CRM Flows", "Outreach"],
   },
