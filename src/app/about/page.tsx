@@ -117,12 +117,14 @@ export default function AboutPage() {
               What we stand <em>for</em>
             </h2>
           </div>
-          <div className="process-grid">
+          <div className="values-grid">
             {values.map((value) => (
-              <div key={value.num} className="process-card">
-                <div className="process-card-num">{value.num}</div>
-                <h3>{value.title}</h3>
-                <p>{value.desc}</p>
+              <div key={value.num} className="value-card">
+                <div className="value-card-icon">
+                  <span className="value-card-num">{value.num}</span>
+                </div>
+                <h3 className="value-card-title">{value.title}</h3>
+                <p className="value-card-desc">{value.desc}</p>
               </div>
             ))}
           </div>

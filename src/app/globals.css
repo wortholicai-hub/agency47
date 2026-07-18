@@ -301,12 +301,7 @@ ol {
 }
 
 .shiny-cta .btn-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--signal);
-  box-shadow: 0 0 8px rgba(220, 38, 38, 0.5);
-  animation: pulse 2.4s var(--easing) infinite;
+  display: none;
 }
 
 /* ===== NAVIGATION ===== */
@@ -1364,6 +1359,95 @@ ol {
   inset: 0;
   background: linear-gradient(180deg, transparent 40%, rgba(220, 38, 38, 0.05) 50%, transparent 60%);
   animation: aboutVisualScan 5.5s ease-in-out infinite;
+}
+
+/* ===== VALUES CARDS ===== */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.value-card {
+  position: relative;
+  padding: 2rem 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.4s ease, background 0.4s ease;
+  overflow: hidden;
+}
+
+.value-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at 50% 0%, rgba(220, 38, 38, 0.08), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.value-card:hover::before {
+  opacity: 1;
+}
+
+.value-card-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 1.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.15), rgba(220, 38, 38, 0.05));
+  border: 1px solid rgba(220, 38, 38, 0.15);
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.value-card:hover .value-card-icon {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.3), rgba(220, 38, 38, 0.1));
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.value-card-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--signal);
+  letter-spacing: 0.04em;
+}
+
+.value-card-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.6rem;
+  color: var(--text);
+}
+
+.value-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===== FAQ SECTION ===== */
